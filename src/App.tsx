@@ -69,8 +69,8 @@ export default function App() {
       ar: "مايو 2026",
     },
     reportDate: {
-      en: "April 2026",
-      ar: "أبريل 2026",
+      en: "July 2026",
+      ar: "يوليو 2026",
     },
     reportPeriod: {
       en: "May 2025 – May 2026",
@@ -412,14 +412,14 @@ export default function App() {
                         color: "bg-[#C89565]",
                       },
                       {
-                        date: isArabic ? "أبريل 2026" : "Apr 2026",
-                        label: isArabic ? "هذا التقرير" : "This Report",
-                        color: "bg-[#B8865F]",
-                      },
-                      {
                         date: isArabic ? "مايو 2026" : "May 2026",
                         label: isArabic ? "انتهاء العقد" : "Contract End",
                         color: "bg-amber-500",
+                      },
+                      {
+                        date: isArabic ? "يوليو 2026" : "July 2026",
+                        label: isArabic ? "هذا التقرير" : "This Report",
+                        color: "bg-[#B8865F]",
                       },
                     ].map((step, idx) => (
                       <div key={idx} className="flex flex-col items-center gap-2 flex-1">
