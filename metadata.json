@@ -1,0 +1,6 @@
+{
+  "name": "Mathwaa 13 Contract Renewal Report",
+  "description": "A premium performance and proposal renewal dashboard replica for Mathwaa 13 Al Aqiq property.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

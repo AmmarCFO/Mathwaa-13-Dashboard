@@ -1,0 +1,1 @@
+function Br({children:e,delay:t=0,className:r=""}){const n=R.useRef(null),i=jF(n,{once:!0,margin:"-60px"});return f.jsx($e.div,{ref:n,initial:{opacity:0,y:28},animate:i?{opacity:1,y:0}:{},transition:{duration:.6,delay:t,ease:[.22,1,.36,1]},className:r,children:e})}
