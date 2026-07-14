@@ -137,33 +137,10 @@ function DriveVideoPreview({ fileId, label }: DriveVideoPreviewProps) {
 export function MarketingEfforts({ isArabic }: MarketingEffortsProps) {
   const langKey = isArabic ? "ar" : "en";
 
-  const stats = [
-    {
-      label: { en: "Meta Ad Spend", ar: "إنفاق إعلاني ميتا" },
-      value: "SAR 10,883",
-      color: "from-[#1877F2] to-[#0a5ad4]",
-    },
-    {
-      label: { en: "TikTok Ad Spend", ar: "إنفاق إعلاني تيك توك" },
-      value: "SAR 3,705",
-      color: "from-[#111] to-[#333]",
-    },
-    {
-      label: { en: "Total Paid Ads", ar: "إجمالي الإعلانات المدفوعة" },
-      value: "SAR 14,588",
-      color: "from-[#B8865F] to-[#C89565]",
-    },
-    {
-      label: { en: "LTR Bookings from Influencer", ar: "حجوزات LTR من المؤثر" },
-      value: "3+",
-      color: "from-emerald-600 to-emerald-500",
-    },
-  ];
-
   const highlights = [
     {
-      en: "Influencer collaboration with a top expat content creator with 86,400 Instagram followers that directly generated 3 long-term residential bookings, some tenants still with us today.",
-      ar: "تعاون مع مؤثر من كبار المغتربين لديه 86,400 متابع على انستغرام أسفر مباشرةً عن 3 حجوزات سكنية طويلة المدى، بعض المستأجرين لا يزالون معنا حتى اليوم.",
+      en: "Collaboration with several local and expat influencers specializing in targeting specific communities to advertise the residential units periodically, resulting in a number of long-term residential bookings.",
+      ar: "تعاون مع عدد من المؤثرين المحليين والمغتربين المتخصصين في استهداف جاليات محددة للاعلان عن الوحدات السكنية بشكل دوري، والتي أسفر عنها عدد من الحجوزات السكنيّة طويلة المدى.",
     },
     {
       en: "In-house video ad productions created by our team and distributed across Meta (Instagram and Facebook) and TikTok paid campaigns.",
@@ -181,18 +158,6 @@ export function MarketingEfforts({ isArabic }: MarketingEffortsProps) {
 
   return (
     <div className="space-y-6">
-      {/* Stats Cards Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        {stats.map((stat, idx) => (
-          <div key={idx} className={`bg-gradient-to-br ${stat.color} rounded-2xl p-4 text-white shadow-lg`}>
-            <p className="text-xl sm:text-2xl font-black leading-tight">{stat.value}</p>
-            <p className="text-[10px] font-semibold opacity-80 uppercase tracking-wide mt-1">
-              {stat.label[langKey]}
-            </p>
-          </div>
-        ))}
-      </div>
-
       {/* Highlights List */}
       <div className="space-y-2.5">
         {highlights.map((highlight, idx) => (

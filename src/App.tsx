@@ -7,7 +7,6 @@ import {
   Lightbulb,
   Megaphone,
   ChartColumn,
-  Wrench,
   DollarSign,
   Handshake,
   MapPin,
@@ -27,7 +26,6 @@ import { PropertyGallery } from "./components/PropertyGallery";
 import { OccupancyPerformance } from "./components/OccupancyPerformance";
 import { RevenuePerformance } from "./components/RevenuePerformance";
 import { MarketingEfforts } from "./components/MarketingEfforts";
-import { OperationalChallenges } from "./components/OperationalChallenges";
 import { OperatingExpenses } from "./components/OperatingExpenses";
 import { ContractRenewalProposal } from "./components/ContractRenewalProposal";
 
@@ -44,8 +42,8 @@ export default function App() {
 
   const buildingDetails = {
     ownerName: {
-      en: "Rakhaa' Investment Company",
-      ar: "شركة رخاء للاستثمار",
+      en: "Rakhaa' Real Estate Development Company",
+      ar: "شركة رخاء للتطوير العقاري",
     },
     buildingName: {
       en: "Mathwaa 13 Al Aqiq",
@@ -114,10 +112,6 @@ export default function App() {
     marketingTitle: {
       en: "Marketing Efforts",
       ar: "جهود التسويق",
-    },
-    challengesTitle: {
-      en: "Operational Challenges and Opportunities",
-      ar: "التحديات التشغيلية والفرص",
     },
     ourInvestment: {
       en: "Our Investment in This Property",
@@ -504,13 +498,6 @@ export default function App() {
           <FadeUp>
             <SectionCard icon={Megaphone} title={labels.marketingTitle[r]}>
               <MarketingEfforts isArabic={isArabic} />
-            </SectionCard>
-          </FadeUp>
-
-          {/* Operational Challenges */}
-          <FadeUp>
-            <SectionCard icon={Wrench} title={labels.challengesTitle[r]}>
-              <OperationalChallenges isArabic={isArabic} />
             </SectionCard>
           </FadeUp>
 

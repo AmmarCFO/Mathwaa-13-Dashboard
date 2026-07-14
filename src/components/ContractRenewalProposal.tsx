@@ -1,4 +1,4 @@
-import { TrendingUp, Shield, Users, Star, CircleCheckBig } from "lucide-react";
+import { TrendingUp, Shield, Users, Star } from "lucide-react";
 import { qre } from "../data";
 
 interface ContractRenewalProposalProps {
@@ -37,25 +37,6 @@ const reasons = [
       en: "At 20%, we can continue investing in marketing, maintenance, and talent to grow occupancy further and protect your asset value.",
       ar: "برسوم 20%، نستطيع الاستمرار في الاستثمار في التسويق والصيانة والكفاءات لزيادة الإشغال وحماية قيمة أصلك.",
     },
-  },
-];
-
-const commitments = [
-  {
-    en: "Maintain minimum 80% average occupancy or renegotiate fee",
-    ar: "الحفاظ على متوسط إشغال 80% كحد أدنى أو إعادة التفاوض على الرسوم",
-  },
-  {
-    en: "Monthly transparent reporting with full financial breakdown",
-    ar: "تقارير شهرية شفافة مع تفصيل مالي كامل",
-  },
-  {
-    en: "Continued marketing investment to grow occupancy beyond current levels",
-    ar: "استثمار تسويقي مستمر لتجاوز مستويات الإشغال الحالية",
-  },
-  {
-    en: "24-hour maintenance response time guarantee",
-    ar: "ضمان وقت استجابة للصيانة خلال 24 ساعة",
   },
 ];
 
@@ -180,20 +161,6 @@ export function ContractRenewalProposal({ isArabic }: ContractRenewalProposalPro
         </div>
       </div>
 
-      {/* Commitments Box */}
-      <div className="p-5 bg-emerald-50 rounded-2xl border border-emerald-200">
-        <p className="text-xs font-bold text-emerald-700 uppercase tracking-widest mb-4">
-          {isArabic ? "التزاماتنا في العقد الجديد" : "Our Commitments in the New Contract"}
-        </p>
-        <div className="space-y-2">
-          {commitments.map((commitment, idx) => (
-            <div key={idx} className="flex items-start gap-2 text-sm text-[#3d3d3d]">
-              <CircleCheckBig className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
-              <span>{commitment[langKey]}</span>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
