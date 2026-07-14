@@ -24,6 +24,13 @@ export function OccupancyPerformance({ isArabic }: OccupancyPerformanceProps) {
   const langKey = isArabic ? "ar" : "en";
   const [showDetail, setShowDetail] = useState(false);
 
+  // Dynamic calculations based on bT array
+  const totalOcc = bT.reduce((sum, item) => sum + item.occ, 0);
+  const avgOccupancy = (totalOcc / bT.length).toFixed(1) + "%";
+
+  const peakItem = bT.reduce((max, item) => item.occ > max.occ ? item : max, bT[0]);
+  const peakValue = peakItem.occ.toFixed(1) + "%";
+
   return (
     <div className="space-y-6">
       {/* KPI Stats Grid */}
@@ -31,14 +38,14 @@ export function OccupancyPerformance({ isArabic }: OccupancyPerformanceProps) {
         {[
           {
             label: { en: "Avg Occupancy", ar: "متوسط الإشغال" },
-            sub: { en: "21-05-2025 – 30-06-2026", ar: "٢١-٠٥-٢٠٢٥ إلى ٣٠-٠٦-٢٠٢٦" },
-            value: "76.0%",
+            sub: { en: "21-05-2025 – 13-07-2026", ar: "٢١-٠٥-٢٠٢٥ إلى ١٣-٠٧-٢٠٢٦" },
+            value: avgOccupancy,
             color: "text-[#C89565]",
           },
           {
             label: { en: "Peak Occupancy", ar: "ذروة الإشغال" },
-            sub: { en: "October 2025", ar: "أكتوبر 2025" },
-            value: "81.6%",
+            sub: peakItem.month,
+            value: peakValue,
             color: "text-emerald-600",
           },
           {

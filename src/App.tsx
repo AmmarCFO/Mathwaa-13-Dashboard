@@ -90,12 +90,12 @@ export default function App() {
     executiveText: {
       en: [
         "This report documents the full performance of Mathwaa's management of Mathwaa 13 Al Aqiq throughout the contract period, covering occupancy results, revenue collected, and the investment we made to bring this building to operational stability.",
-        "We launched this building from zero, navigated a phased unit handover, and steadily grew occupancy from 4% in June 2025 to 81.2% by June 2026. This trajectory reflects real operational commitment.",
+        "We launched this building from zero, navigated a phased unit handover, and reached a peak occupancy of 81.6% in October 2025. This trajectory reflects real operational commitment.",
         "Most importantly, this report presents a transparent breakdown of our actual annual costs of SAR 319,200, which equal 19% of net revenue, and makes the case for renewing under a 20% management fee.",
       ],
       ar: [
         "يوثّق هذا التقرير الأداء الكامل لإدارة مثوى لمبنى مثوى 13 في حي العقيق خلال فترة العقد، ويشمل نتائج الإشغال والإيرادات المحصّلة والاستثمار الذي قدّمناه لإيصال المبنى إلى الاستقرار التشغيلي.",
-        "أطلقنا هذا المبنى من الصفر، وتجاوزنا مرحلة التسليم التدريجي للوحدات، ورفعنا الإشغال تدريجياً من 4% في يونيو 2025 إلى 81.2% في يونيو 2026، وهو مسار يعكس التزاماً تشغيلياً حقيقياً.",
+        "أطلقنا هذا المبنى من الصفر، وتجاوزنا مرحلة التسليم التدريجي للوحدات، ووصلنا لذروة إشغال بلغت 81.6% في أكتوبر 2025، وهو مسار يعكس التزاماً تشغيلياً حقيقياً.",
         "والأهم من ذلك، يقدّم هذا التقرير تفصيلاً شفافاً لتكاليفنا الفعلية السنوية البالغة 319,200 ريال، التي تعادل 19% من صافي الإيراد، ويقدّم الحجة لتجديد العقد برسوم إدارة بنسبة 20%.",
       ],
     },
@@ -179,8 +179,8 @@ export default function App() {
       label: "text-emerald-700",
       items: [
         {
-          en: "Grew from 4% in June 2025 to 81.6% in October 2025, maintaining a high-performance average above 75% for subsequent months.",
-          ar: "نما الإشغال من 4% في يونيو 2025 إلى 81.6% في أكتوبر 2025، مع الحفاظ على متوسط أداء مرتفع فوق 75% للأشهر اللاحقة.",
+          en: "Grew from 4% in June 2025 to a peak of 81.6% in October 2025, achieving healthy occupancy rates through stable operating periods.",
+          ar: "نما الإشغال من 4% في يونيو 2025 إلى ذروة بلغت 81.6% في أكتوبر 2025، محققاً مستويات إشغال جيدة ومستقرة خلال فترات التشغيل.",
         },
         {
           en: "14 units achieved average occupancy above 80%, proving strong market demand at the right price point.",

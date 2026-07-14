@@ -265,21 +265,35 @@ export const bT: MonthOccupancy[] = [
       "en": "Apr 26",
       "ar": "أبر 26"
     },
-    "occ": 71.5
+    "occ": 60
   },
   {
     "month": {
       "en": "May 26",
       "ar": "مايو 26"
     },
-    "occ": 78.5
+    "occ": 63
   },
   {
     "month": {
       "en": "Jun 26",
       "ar": "يونيو 26"
     },
-    "occ": 81.2
+    "occ": 55
+  },
+  {
+    "month": {
+      "en": "Jul 26",
+      "ar": "يوليو 26"
+    },
+    "occ": 58
+  },
+  {
+    "month": {
+      "en": "Jul 1-13*",
+      "ar": "١-١٣ يوليو*"
+    },
+    "occ": 56
   }
 ];
 
@@ -508,7 +522,7 @@ export const Pb: FloorItem[] = [
       },
       {
         "id": "1002",
-        "occupied": false
+        "occupied": true
       },
       {
         "id": "1003",
@@ -520,23 +534,23 @@ export const Pb: FloorItem[] = [
       },
       {
         "id": "1005",
-        "occupied": true
+        "occupied": false
       },
       {
         "id": "1006",
-        "occupied": false
-      },
-      {
-        "id": "1007",
         "occupied": true
       },
       {
-        "id": "1008",
+        "id": "1007",
         "occupied": false
       },
       {
+        "id": "1008",
+        "occupied": true
+      },
+      {
         "id": "1009",
-        "occupied": false
+        "occupied": true
       }
     ]
   },
@@ -568,19 +582,19 @@ export const Pb: FloorItem[] = [
       },
       {
         "id": "1015",
-        "occupied": true
+        "occupied": false
       },
       {
         "id": "1016",
-        "occupied": false
-      },
-      {
-        "id": "1017",
         "occupied": true
       },
       {
-        "id": "1018",
+        "id": "1017",
         "occupied": false
+      },
+      {
+        "id": "1018",
+        "occupied": true
       }
     ]
   },
@@ -596,7 +610,7 @@ export const Pb: FloorItem[] = [
       },
       {
         "id": "1020",
-        "occupied": true
+        "occupied": false
       },
       {
         "id": "1021",
@@ -604,7 +618,7 @@ export const Pb: FloorItem[] = [
       },
       {
         "id": "1022",
-        "occupied": false
+        "occupied": true
       },
       {
         "id": "1023",
@@ -628,7 +642,7 @@ export const Pb: FloorItem[] = [
       },
       {
         "id": "1028",
-        "occupied": false
+        "occupied": true
       }
     ]
   },
@@ -652,19 +666,19 @@ export const Pb: FloorItem[] = [
       },
       {
         "id": "1032",
-        "occupied": true
+        "occupied": false
       },
       {
         "id": "1033",
-        "occupied": true
+        "occupied": false
       },
       {
         "id": "1034",
-        "occupied": false
+        "occupied": true
       },
       {
         "id": "1035",
-        "occupied": false
+        "occupied": true
       }
     ]
   }
